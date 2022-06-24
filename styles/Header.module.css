@@ -1,0 +1,16 @@
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(to right, #da22ff, #9733ee);
+}
+
+.Header i{
+    font-size: 3rem;
+}
+
+.Header h1{
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    font-weight: bolder;
+}
