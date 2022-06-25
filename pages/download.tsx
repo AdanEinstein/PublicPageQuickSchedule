@@ -5,10 +5,10 @@ import Layout from "../components/layout/Layout";
 
 // Windows
 const urlWindows =
-	"https://mega.nz/file/mfIhjK4J#bwaE4GOnd7hsP1zvgNsU-KJUohzMTdoECUfIAY3Sjro";
+	"https://mega.nz/file/uG5iDIKQ#4Q8F-KoCDUWvS3jTHpYW3mXTulU9VWJgSV30kHnidRY";
 // MacOS
 const urlMac =
-	"https://mega.nz/file/6WRQWI7L#jsafMEb9xmT4_RPWEZpd1vfw2QIjjZdxdQVLhzMXcSo";
+	"https://mega.nz/file/qfJjwDAa#EhCVQTZAB_4c_jYgkwY_OXhYPhAo_PwPAhAk_X9n1gM";
 
 const Download: React.FC = () => {
 	// const [download, setDownload] = useState<string>();
@@ -28,17 +28,19 @@ const Download: React.FC = () => {
 					<h4>Aproveite!</h4>
 				</div>
 				<div className="d-flex">
-					<Link
-						href={urlWindows}
-                        >
-						<a target={"_blank"} className="btn btn-lg btn-success m-1">
+					<Link href={urlWindows}>
+						<a
+							target={"_blank"}
+							className="btn btn-lg btn-success m-1"
+						>
 							Windows <i className="bi bi-windows"></i>
 						</a>
 					</Link>
-					<Link
-						href={urlMac}
-					>
-						<a target={"_blank"} className="btn btn-lg btn-info m-1">
+					<Link href={urlMac}>
+						<a
+							target={"_blank"}
+							className="btn btn-lg btn-info m-1"
+						>
 							MacOS <i className="bi bi-apple"></i>
 						</a>
 					</Link>
