@@ -11,7 +11,7 @@ import { Carousel, CarouselItem } from "react-bootstrap";
 
 const Home: React.FC = () => {
 	return (
-		<Layout>
+		<Layout page="Home">
 			<div className="container d-flex flex-column">
 				<div className="row">
 					<div className="d-flex align-items-center justify-content-center my-4">
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
 							</CarouselItem>
 						</Carousel>
 					</div>
-					<div className="row flex-grow-1">
+					<div className="row flex-grow-1 my-3">
 						<div className="col-md-2"></div>
 						<div className="col-md-8 col-lg-8 col-12 my-3">
 							<p className="fs-5">

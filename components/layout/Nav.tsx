@@ -9,15 +9,15 @@ interface INavProps {
 const Nav: React.FC<PropsWithChildren<INavProps>> = ({ pageCurrent }) => {
 	return (
 		<nav className={styles.Nav}>
-			<Link href={"#"}>
+			<Link href={"/"}>
 				<a className={pageCurrent === "Home" && styles.selected}>Home</a>
 			</Link>
-			<Link href={"#"}>
+			<Link href={"/download"}>
 				<a className={pageCurrent === "Download" && styles.selected}>
 					Download
 				</a>
 			</Link>
-			<Link href={"#"}>
+			<Link href={"/tutorial"}>
 				<a className={pageCurrent === "Tutorial" && styles.selected}>
 					Tutorial
 				</a>

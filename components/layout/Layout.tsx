@@ -5,14 +5,14 @@ import { PropsWithChildren } from "react"
 import Nav from "./Nav"
 
 interface ILayoutProps{
-
+    page: string
 }
 
-const Layout: React.FC<PropsWithChildren<ILayoutProps>> = ({children}) => {
+const Layout: React.FC<PropsWithChildren<ILayoutProps>> = ({children, page}) => {
     return (
         <div className={styles.Layout}>
             <Header/>
-            <Nav pageCurrent="Home"/>
+            <Nav pageCurrent={page}/>
             <div>{children}</div>
             <Footer/>
         </div>
