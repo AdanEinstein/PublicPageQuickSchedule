@@ -5,10 +5,13 @@ import Layout from "../components/layout/Layout";
 
 // Windows
 const urlWindows =
-	"https://mega.nz/file/uG5iDIKQ#4Q8F-KoCDUWvS3jTHpYW3mXTulU9VWJgSV30kHnidRY";
+	"https://drive.google.com/file/d/12SJ2sOQvNAUCUSaRw9Q15zPkVJazGgAS/view";
 // MacOS
 const urlMac =
-	"https://mega.nz/file/qfJjwDAa#EhCVQTZAB_4c_jYgkwY_OXhYPhAo_PwPAhAk_X9n1gM";
+	"https://drive.google.com/file/d/1XcOeKPxMjpRH6sI6U1vU5sZbBrThiTPZ/view";
+
+const urlLinux = 
+	"https://drive.google.com/file/d/1rBtixqXlAC84VA-_TTTggB3k3BvvoN2L/view"
 
 const Download: React.FC = () => {
 	// const [download, setDownload] = useState<string>();
@@ -16,14 +19,15 @@ const Download: React.FC = () => {
 		<Layout page="Download">
 			<div className="container h-100 d-flex flex-column flex-sm-row justify-content-center align-items-center justify-content-sm-around">
 				<div>
-					<h1>Efetue o donwload aqui!</h1>
+					<h1>Efetue o download aqui!</h1>
 					<p className="fs-5">
 						Um ótimo sistema de agenda e finanças para para você!
 					</p>
 					<p className="fs-5">
-						Funciona tanto em sistema operacional{" "}
-						<strong className="text-success">Windows</strong> quanto{" "}
-						<strong className="text-info">MacOS</strong>
+						Sistemas operacionais{" "}
+						<strong className="text-success">Windows</strong> {" "},{" "}
+						<strong className="text-info">MacOS</strong> e{" "}
+						<strong className="text-secondary">Linux</strong>
 					</p>
 					<h4>Aproveite!</h4>
 				</div>
@@ -44,16 +48,14 @@ const Download: React.FC = () => {
 							MacOS <i className="bi bi-apple"></i>
 						</a>
 					</Link>
-					{/* <Button size={"lg"} variant={"success"} className="m-1"
-						onClick={() => setDownload(urlWindows)}
+					<Link href={urlLinux}>
+						<a
+							target={"_blank"}
+							className="btn btn-lg btn-secondary m-1"
 						>
-						Windows <i className="bi bi-windows"></i>
-					</Button>
-					<Button size={"lg"} variant={"info"} className="m-1"
-						onClick={() => setDownload(urlMac)}
-					>
-						MacOS <i className="bi bi-apple"></i>
-					</Button> */}
+							Linux <i className="bi bi-ubuntu"></i>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</Layout>
